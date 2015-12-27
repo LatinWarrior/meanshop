@@ -15,8 +15,8 @@ describe('Controller: MainCtrl', function() {
   // Initialize the controller and a mock scope
   beforeEach(inject(function(_$httpBackend_, $controller, $rootScope, $state) {
     $httpBackend = _$httpBackend_;
-    $httpBackend.expectGET('/api/things')
-      .respond(['HTML5 Boilerplate', 'AngularJS', 'Karma', 'Express']);
+    $httpBackend.expectGET('/api/products')
+      .respond(['Product 1', 'Product 2', 'Product 3', 'Product 4']);
 
     scope = $rootScope.$new();
     state = $state;
@@ -25,8 +25,8 @@ describe('Controller: MainCtrl', function() {
     });
   }));
 
-  it('should attach a list of things to the scope', function() {
+  it('should attach a list of products to the scope', function() {
     $httpBackend.flush();
-    expect(scope.awesomeThings.length).to.equal(4);
+    expect(scope.products.length).to.equal(4);
   });
 });
