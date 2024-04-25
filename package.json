@@ -15,7 +15,7 @@
     "lodash": "~2.4.1",
     "babel-core": "^5.6.4",
     "ejs": "~0.8.4",
-    "mongoose": "^4.1.2",
+    "mongoose": "^5.13.15",
     "bluebird": "^2.9.34",
     "connect-mongo": "^0.8.1",
     "jsonwebtoken": "^5.0.0",
